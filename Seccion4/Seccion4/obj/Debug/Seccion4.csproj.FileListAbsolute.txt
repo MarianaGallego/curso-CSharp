@@ -1,0 +1,8 @@
+C:\Users\maria\OneDrive - Universidad de Antioquia\Escritorio\Cursos\CSharp\Seccion4\Seccion4\bin\Debug\Seccion4.exe.config
+C:\Users\maria\OneDrive - Universidad de Antioquia\Escritorio\Cursos\CSharp\Seccion4\Seccion4\bin\Debug\Seccion4.exe
+C:\Users\maria\OneDrive - Universidad de Antioquia\Escritorio\Cursos\CSharp\Seccion4\Seccion4\bin\Debug\Seccion4.pdb
+C:\Users\maria\OneDrive - Universidad de Antioquia\Escritorio\Cursos\CSharp\Seccion4\Seccion4\obj\Debug\Seccion4.csproj.AssemblyReference.cache
+C:\Users\maria\OneDrive - Universidad de Antioquia\Escritorio\Cursos\CSharp\Seccion4\Seccion4\obj\Debug\Seccion4.csproj.CoreCompileInputs.cache
+C:\Users\maria\OneDrive - Universidad de Antioquia\Escritorio\Cursos\CSharp\Seccion4\Seccion4\obj\Debug\Seccion4.exe
+C:\Users\maria\OneDrive - Universidad de Antioquia\Escritorio\Cursos\CSharp\Seccion4\Seccion4\obj\Debug\Seccion4.pdb
+C:\Users\maria\OneDrive - Universidad de Antioquia\Escritorio\Cursos\CSharp\Seccion4\Seccion4\obj\Debug\Seccion4.exe.config
