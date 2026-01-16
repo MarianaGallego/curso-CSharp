@@ -10,12 +10,24 @@ namespace Seccion4
     {
         static void Main(string[] args)
         {
-            int i;
+            byte i, numAlumnos;
+            double calificacion, sumaCalif = 0, promedio;
 
-            for (i = 10; i >= 0; i--, Console.WriteLine("Valor de salida: {0}", i))
+            Console.WriteLine("Ingresa el número de alumnos");
+            numAlumnos = Convert.ToByte(Console.ReadLine());
+
+            for (i = 1; i <= numAlumnos; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Ingresa la calificación: ");
+                calificacion = Convert.ToDouble(Console.ReadLine());
+
+                sumaCalif += calificacion;
             }
+
+            // Calcular promedio
+            promedio = sumaCalif / numAlumnos;
+
+            Console.WriteLine("El promedio es: {0}", promedio);
         }
     }
 }
