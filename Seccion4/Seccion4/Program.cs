@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Seccion4
 {
@@ -10,24 +11,64 @@ namespace Seccion4
     {
         static void Main(string[] args)
         {
-            byte i, numAlumnos;
-            double calificacion, sumaCalif = 0, promedio;
+            // Ejecicio 1
 
-            Console.WriteLine("Ingresa el número de alumnos");
-            numAlumnos = Convert.ToByte(Console.ReadLine());
+            int exponente, potencia, potenciaConv;
+            double resultado, resultadoParcial;
 
-            for (i = 1; i <= numAlumnos; i++)
+            Console.WriteLine("Ingrese el exponente");
+            exponente = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ingrese la potencia");
+            potencia = Convert.ToInt32(Console.ReadLine());
+
+            if (potencia < 1)
             {
-                Console.WriteLine("Ingresa la calificación: ");
-                calificacion = Convert.ToDouble(Console.ReadLine());
+                resultadoParcial = exponente;
+                potenciaConv = potencia * -1;
 
-                sumaCalif += calificacion;
+                for (int i = 1; i < potenciaConv; i++)
+                {
+                    resultadoParcial *= exponente;
+                }
+
+                resultado = 1 / resultadoParcial;
+            } else
+            {
+                resultado = exponente;
+
+                for (int i = 1; i < potencia; i++)
+                {
+                    resultado *= exponente;
+                }
             }
 
-            // Calcular promedio
-            promedio = sumaCalif / numAlumnos;
+            Console.WriteLine("El resultado de {0} elevado a la {1} es: {2}", exponente, potencia, resultado);
 
-            Console.WriteLine("El promedio es: {0}", promedio);
+            // Ejercicio 2
+
+            Console.WriteLine("Los números primos de cero a cien son: ");
+
+            int j, num;
+            bool primo;
+
+            for (num = 1; num <= 100; num++)
+            {
+                primo = true;
+
+                for (j = 2; j < num; j++)
+                {
+                    if (num % j == 0)
+                    {
+                        primo = false;
+                    }
+                }
+
+                if (primo == true)
+                {
+                    Console.WriteLine(num);
+                }
+            }
         }
     }
 }
